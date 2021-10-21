@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/_16dp"
+    tools:context=".activity.DetailArtikelActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvDetailArtikel"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="@dimen/_20dp"
+        app:cardElevation="@dimen/_4dp"
+        app:layout_constraintBottom_toTopOf="@id/tvTitleDetail"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivDetail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/image_view"
+            android:scaleType="centerCrop"
+            android:src="@drawable/artikel_1" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:fontFamily="sans-serif"
+        android:paddingStart="@dimen/_16dp"
+        android:paddingEnd="@dimen/_16dp"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_24sp"
+        android:text="@string/detail"
+        app:layout_constraintTop_toBottomOf="@+id/cvDetailArtikel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/tvTitleDetail"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleDetail"
+        android:id="@+id/svDetail">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_item"
+            android:fontFamily="sans-serif"
+            android:paddingVertical="@dimen/_8dp"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_16dp"
+            android:id="@+id/tvDescDetail"/>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

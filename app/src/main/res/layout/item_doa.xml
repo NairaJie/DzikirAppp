@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_16dp"
+    android:paddingBottom="8dp"
+    android:background="@drawable/bg_item">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_grey"
+        android:id="@+id/tvDescItemDoa"
+        android:padding="@dimen/_16dp"
+        android:textColor="@color/dot_blue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="@string/txt_description"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_16dp"
+        android:textSize="@dimen/_20sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:paddingTop="@dimen/_8dp"
+        android:paddingEnd="@dimen/_16dp"
+        android:paddingStart="@dimen/_16dp"
+        android:text="@string/txt_lafaz"
+        android:fontFamily="@font/arabic_arihna"
+        android:id="@+id/tvLavazItemDoa"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:paddingStart="@dimen/_16dp"
+        android:paddingEnd="@dimen/_16dp"
+        android:paddingBottom="@dimen/_16dp"
+        android:paddingTop="@dimen/_8dp"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_16sp"
+        android:textStyle="italic"
+        android:id="@+id/tvTerjemah"/>
+
+
+</LinearLayout>
